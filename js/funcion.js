@@ -16,6 +16,16 @@ function mostrarDatos(){
     const localidad = prompt("¿En que localidad vives?");
     const hobby = prompt("¿Cual es tu hobby?");
     const frase = prompt("Te llamas "+ nombre+ ", vives en "+ localidad+ " y te gusta "+ hobby+ ".");
-    document.getElementById("resultado").textContent = frase;
+    document.getElementById("datosPersonales").textContent = frase;
     console.log(frase);
+}
+
+//funcion para calcular el area del círculo
+
+function calcularArea(){
+    const radio = parseFloat(prompt("¿Caul es el radio?"));
+    const pi = parseFloat((Math.PI).toFixed(4));
+    const area = pi * Math.pow(radio,2);
+    document.getElementById("resultadoArea").textContent = "El área de un cirulo con radio " + radio + " es:" + area.toFixed(0);
+
 }
